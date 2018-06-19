@@ -1,6 +1,8 @@
 {
   "name": "vgr",
-  "app_id": "7642ca37",
+  "app_id": "f9648523",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
