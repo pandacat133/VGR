@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>List</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h4>{{sortBy}}</h4>
+  <ion-list>
+    <button ion-item *ngFor="let game of games" (click)="itemTapped($event, game)">
+      <ion-icon [name]="game.icon" item-start></ion-icon>
+      {{game.title}}
+      <div class="item-note" item-end>
+        {{game.note}}{{game.id}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
